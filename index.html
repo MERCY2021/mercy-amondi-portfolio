@@ -1,137 +1,129 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#102747">
-  <meta name="description" content="Mercy Amondi's digital skills portfolio featuring developing skills in HTML, CSS, GitHub, GitHub Pages, WordPress, and graphic design.">
-  <title>Mercy Amondi | Digital Skills Portfolio</title>
+  <meta name="description" content="Mercy Amondi's digital skills and software development portfolio.">
+  <title>Mercy Amondi | Digital Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar" aria-label="Main navigation">
-      <a class="logo" href="#home" aria-label="Mercy Amondi home">MA<span>.</span></a>
-      <div class="nav-links">
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact" class="nav-button">Contact</a>
-      </div>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#top">MERCY<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="eyebrow">DIGITAL SKILLS PORTFOLIO</p>
-        <h1>Mercy <span>Amondi</span></h1>
-        <h2>Web Development &amp; Digital Design</h2>
-        <p class="hero-text">I’m building practical skills in web development and digital design through personal projects. I’m learning to create web pages with HTML and CSS, manage files with GitHub, publish websites with GitHub Pages, update content in WordPress, and design simple posters and flyers.</p>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>Mercy Amondi.</span></h1>
+        <h2>Digital Skills &amp; Software Development</h2>
+        <p class="hero-copy">I’m building practical digital solutions through web development, software projects, and creative design.</p>
         <div class="hero-actions">
-          <a href="#projects" class="button primary">Explore My Projects</a>
-          <a href="https://github.com/MERCY2021" class="button secondary" target="_blank" rel="noopener noreferrer">View GitHub</a>
+          <a class="button button-light" href="#projects">Explore My Work <span aria-hidden="true">↘</span></a>
+          <a class="button button-outline" href="#contact">Contact Me</a>
         </div>
-        <p class="hero-location">Nairobi, Kenya · Learning by building practical projects</p>
       </div>
-      <aside class="hero-card" aria-label="Digital skills overview">
-        <div class="profile-circle" aria-hidden="true">MA</div>
-        <h3>Current Digital Focus</h3>
-        <ul class="simple-list">
-          <li>HTML and CSS</li>
-          <li>GitHub and website publishing</li>
-          <li>WordPress website content</li>
-          <li>Poster and flyer design</li>
-        </ul>
-      </aside>
+      <div class="hero-mark" aria-hidden="true">&lt;/&gt;</div>
     </section>
 
-    <section class="section shaded" id="skills">
-      <p class="eyebrow">MY SKILLS</p>
-      <h2>Digital Skills &amp; Tools</h2>
-      <div class="skill-cards">
-        <article class="skill-card">
-          <p class="skill-number">01</p>
-          <h3>HTML</h3>
-          <p>Building the structure of web pages with headings, text, links, images, sections, and accessible page elements.</p>
-        </article>
-        <article class="skill-card">
-          <p class="skill-number">02</p>
-          <h3>CSS &amp; Responsive Design</h3>
-          <p>Styling web pages with colours, spacing, typography, layouts, and responsive adjustments for phones and computers.</p>
-        </article>
-        <article class="skill-card">
-          <p class="skill-number">03</p>
-          <h3>GitHub &amp; Version Control</h3>
-          <p>Creating repositories, editing files, committing changes, and keeping project code organised on GitHub.</p>
-        </article>
-        <article class="skill-card">
-          <p class="skill-number">04</p>
-          <h3>GitHub Pages</h3>
-          <p>Publishing static websites, configuring deployment, and practising how to troubleshoot publishing issues.</p>
-        </article>
-        <article class="skill-card">
-          <p class="skill-number">05</p>
-          <h3>WordPress &amp; Website Content</h3>
-          <p>Practising content updates, arranging page content, adding images, and keeping website information clear and current.</p>
-        </article>
-        <article class="skill-card">
-          <p class="skill-number">06</p>
-          <h3>Graphic Design &amp; Posters</h3>
-          <p>Developing simple posters, flyers, and digital promotional materials with clear layouts, readable text, and consistent presentation.</p>
-        </article>
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>About Me</h2>
+        <span class="heading-line"></span>
+      </div>
+      <p class="about-copy">I am growing my skills in technology by creating practical projects and learning how websites and software work. This portfolio is where I share my progress, experiments, and projects as I continue to develop as a software developer.</p>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">TOOLS I AM LEARNING</p>
+          <h2>My Skills</h2>
+          <span class="heading-line"></span>
+          <p class="section-intro">A growing collection of technologies and digital skills.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card"><span class="skill-icon">&lt;/&gt;</span><h3>HTML5</h3><p>Web page structure</p></div>
+          <div class="skill-card"><span class="skill-icon">#</span><h3>CSS3</h3><p>Styling and layouts</p></div>
+          <div class="skill-card"><span class="skill-icon">JS</span><h3>JavaScript</h3><p>Interactive websites</p></div>
+          <div class="skill-card"><span class="skill-icon">Py</span><h3>Python</h3><p>Programming basics</p></div>
+          <div class="skill-card"><span class="skill-icon">DB</span><h3>SQL &amp; Databases</h3><p>Working with data</p></div>
+          <div class="skill-card"><span class="skill-icon">R</span><h3>React</h3><p>Building user interfaces</p></div>
+          <div class="skill-card"><span class="skill-icon">↔</span><h3>Responsive Design</h3><p>Mobile-friendly layouts</p></div>
+          <div class="skill-card"><span class="skill-icon">Git</span><h3>Git</h3><p>Version control</p></div>
+          <div class="skill-card"><span class="skill-icon">W</span><h3>WordPress</h3><p>Website management</p></div>
+          <div class="skill-card"><span class="skill-icon">UI</span><h3>UI/UX Design</h3><p>User-focused design</p></div>
+          <div class="skill-card"><span class="skill-icon">API</span><h3>API Integration</h3><p>Connecting services</p></div>
+          <div class="skill-card"><span class="skill-icon">✳</span><h3>Graphic Design</h3><p>Digital visuals</p></div>
+        </div>
+        <p class="skills-note">This list represents technologies I am learning and developing through practice. I will update it as my experience grows.</p>
       </div>
     </section>
 
-    <section class="section project-section" id="projects">
-      <p class="eyebrow">PRACTICAL WORK</p>
-      <h2>My Projects</h2>
-      <article class="skill-card">
-        <p class="skill-number">PROJECT 01</p>
-        <h3>Office Management System</h3>
-        <p class="section-text">A personal learning project for practising HTML, CSS, page layout, and publishing a website with GitHub Pages. I’m continuing to develop and improve the project as I learn.</p>
-        <div class="project-links">
-          <a href="https://mercy2021.github.io/office-management-system/" target="_blank" rel="noopener noreferrer">View Live Project ↗</a>
-          <a href="https://github.com/MERCY2021/office-management-system" target="_blank" rel="noopener noreferrer">View Source Code ↗</a>
-        </div>
-      </article>
-      <article class="skill-card" style="margin-top: 16px;">
-        <p class="skill-number">PROJECT 02</p>
-        <h3>Personal Portfolio Website</h3>
-        <p class="section-text">This website is a practical project where I practise page structure, CSS styling, responsive layout, social links, and GitHub Pages deployment.</p>
-        <div class="project-links">
-          <a href="https://mercy2021.github.io/mercy-amondi-portfolio/" target="_blank" rel="noopener noreferrer">View Live Portfolio ↗</a>
-          <a href="https://github.com/MERCY2021/mercy-amondi-portfolio" target="_blank" rel="noopener noreferrer">View Source Code ↗</a>
-        </div>
-      </article>
-      <p class="project-note">These are learning projects and are being improved as my skills develop.</p>
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I AM BUILDING</p>
+        <h2>Featured Projects</h2>
+        <span class="heading-line"></span>
+        <p class="section-intro">A selection of projects I am developing and improving.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-preview preview-one"><span>01</span><div class="preview-window"><i></i><i></i><i></i><b>Office Management System</b><small>Organise. Manage. Track.</small></div></div>
+          <div class="project-body"><p class="project-type">WEB APPLICATION</p><h3>Office Management System</h3><p>A software project focused on organising office information and making everyday tasks easier to manage.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-preview preview-two"><span>02</span><div class="portfolio-symbol">&lt;M /&gt;</div><small>MY DIGITAL SPACE</small></div>
+          <div class="project-body"><p class="project-type">WEB DESIGN</p><h3>Personal Portfolio</h3><p>A responsive website to present my growing technical skills, learning journey, and digital projects.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>Responsive Design</span></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-preview preview-three"><span>03</span><div class="design-sheet"><div></div><div></div><div></div><b>Digital Design</b></div></div>
+          <div class="project-body"><p class="project-type">CREATIVE WORK</p><h3>Digital Design Samples</h3><p>A space for future posters, graphics, and other visual work created with digital design tools.</p><div class="tag-list"><span>Design</span><span>Layout</span><span>Creativity</span></div></div>
+        </article>
+      </div>
+      <p class="project-note">Project descriptions and previews can be updated as each project develops. Add real screenshots and working links when they are ready.</p>
     </section>
 
     <section class="section contact-section" id="contact">
-      <p class="eyebrow">CONNECT</p>
-      <h2>Contact &amp; Profiles</h2>
-      <p class="contact-intro">Explore my projects or connect with me through the profiles below.</p>
-      <div class="contact-actions">
-        <a class="button primary" href="mailto:amondimercy2019@gmail.com">Email Me</a>
-        <a class="button secondary" href="https://github.com/MERCY2021" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Contact Me</h2>
+          <span class="heading-line"></span>
+          <p class="section-intro">Have a question or want to connect about a project? Get in touch.</p>
+        </div>
+        <a class="contact-link" href="mailto:amondimercy2019@gmail.com"><span class="contact-icon">@</span><span><small>EMAIL</small><strong>amondimercy2019@gmail.com</strong></span><span class="contact-arrow">↗</span></a>
       </div>
-      <p class="contact-email"><a href="mailto:amondimercy2019@gmail.com">amondimercy2019@gmail.com</a></p>
-      <nav class="social-links" aria-label="Social media profiles">
-        <a href="https://www.linkedin.com/in/mercy-amondi-54321b3b2/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/MERCY2021" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.instagram.com/amondymercy/" target="_blank" rel="noopener noreferrer">Instagram (@amondymercy)</a>
-      </nav>
-      <p class="contact-location">Nairobi, Kenya</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Mercy Amondi · Digital Skills Portfolio</p>
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/mercy-amondi-54321b3b2/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://github.com/MERCY2021" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.instagram.com/amondymercy/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="#home">Back to top ↑</a>
-    </div>
+    <div class="container footer-inner"><a class="logo" href="#top">MERCY<span>.</span></a><p>© <span id="year">2026</span> Mercy Amondi. Built with curiosity and code.</p><a class="back-top" href="#top">BACK TO TOP ↑</a></div>
   </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const toggle = document.querySelector(".menu-toggle");
+    const links = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+      const isOpen = links.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+    links.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      links.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+    }));
+  </script>
 </body>
 </html>
