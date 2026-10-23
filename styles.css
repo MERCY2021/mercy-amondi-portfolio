@@ -25,6 +25,9 @@ h1, h2, h3, .logo { font-family: var(--heading-font); }
 .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; }
 .logo { color: var(--white); font-size: 1.2rem; font-weight: 700; letter-spacing: .13em; }
 .logo span { color: var(--accent); }
+.logo { display: inline-flex; align-items: center; gap: 10px; }
+.logo .logo-text { color: var(--white); }
+.logo-img { display: block; width: 38px; height: 38px; border-radius: 8px; }
 .nav-links { display: flex; align-items: center; gap: 34px; margin: 0; padding: 0; list-style: none; }
 .nav-links a { color: #bcbcc0; font-size: .88rem; transition: color .2s ease; }
 .nav-links a:hover { color: var(--accent); }
