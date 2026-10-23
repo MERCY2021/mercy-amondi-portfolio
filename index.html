@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mercy Amondi's digital skills and software development portfolio.">
   <title>Mercy Amondi | Digital Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");</script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -37,7 +40,7 @@
       <div class="hero-mark" aria-hidden="true">&lt;/&gt;</div>
     </section>
 
-    <section class="section container" id="about">
+    <section class="section container reveal" id="about">
       <div class="section-heading">
         <p class="eyebrow">A LITTLE ABOUT ME</p>
         <h2>About Me</h2>
@@ -48,56 +51,73 @@
 
     <section class="section section-alt" id="skills">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="eyebrow">TOOLS I AM LEARNING</p>
           <h2>My Skills</h2>
           <span class="heading-line"></span>
           <p class="section-intro">A growing collection of technologies and digital skills.</p>
         </div>
-        <div class="skills-grid">
-          <div class="skill-card"><span class="skill-icon">&lt;/&gt;</span><h3>HTML5</h3><p>Web page structure</p></div>
-          <div class="skill-card"><span class="skill-icon">#</span><h3>CSS3</h3><p>Styling and layouts</p></div>
-          <div class="skill-card"><span class="skill-icon">JS</span><h3>JavaScript</h3><p>Interactive websites</p></div>
-          <div class="skill-card"><span class="skill-icon">Py</span><h3>Python</h3><p>Programming basics</p></div>
-          <div class="skill-card"><span class="skill-icon">DB</span><h3>SQL &amp; Databases</h3><p>Working with data</p></div>
-          <div class="skill-card"><span class="skill-icon">R</span><h3>React</h3><p>Building user interfaces</p></div>
-          <div class="skill-card"><span class="skill-icon">↔</span><h3>Responsive Design</h3><p>Mobile-friendly layouts</p></div>
-          <div class="skill-card"><span class="skill-icon">Git</span><h3>Git</h3><p>Version control</p></div>
-          <div class="skill-card"><span class="skill-icon">W</span><h3>WordPress</h3><p>Website management</p></div>
-          <div class="skill-card"><span class="skill-icon">UI</span><h3>UI/UX Design</h3><p>User-focused design</p></div>
-          <div class="skill-card"><span class="skill-icon">API</span><h3>API Integration</h3><p>Connecting services</p></div>
-          <div class="skill-card"><span class="skill-icon">✳</span><h3>Graphic Design</h3><p>Digital visuals</p></div>
+
+        <div class="skill-group">
+          <h3 class="group-title reveal">Frontend</h3>
+          <div class="skills-grid">
+            <div class="skill-card reveal" style="--d:.00s"><span class="skill-icon">&lt;/&gt;</span><h3>HTML5</h3><p>Web page structure</p></div>
+            <div class="skill-card reveal" style="--d:.05s"><span class="skill-icon">#</span><h3>CSS3</h3><p>Styling and layouts</p></div>
+            <div class="skill-card reveal" style="--d:.10s"><span class="skill-icon">JS</span><h3>JavaScript</h3><p>Interactive websites</p></div>
+            <div class="skill-card reveal" style="--d:.15s"><span class="skill-icon">R</span><h3>React</h3><p>Building user interfaces</p></div>
+            <div class="skill-card reveal" style="--d:.20s"><span class="skill-icon">↔</span><h3>Responsive Design</h3><p>Mobile-friendly layouts</p></div>
+          </div>
         </div>
-        <p class="skills-note">This list represents technologies I am learning and developing through practice. I will update it as my experience grows.</p>
+
+        <div class="skill-group">
+          <h3 class="group-title reveal">Backend &amp; Data</h3>
+          <div class="skills-grid">
+            <div class="skill-card reveal" style="--d:.00s"><span class="skill-icon">Py</span><h3>Python</h3><p>Programming basics</p></div>
+            <div class="skill-card reveal" style="--d:.05s"><span class="skill-icon">DB</span><h3>SQL &amp; Databases</h3><p>Working with data</p></div>
+            <div class="skill-card reveal" style="--d:.10s"><span class="skill-icon">API</span><h3>API Integration</h3><p>Connecting services</p></div>
+            <div class="skill-card reveal" style="--d:.15s"><span class="skill-icon">Git</span><h3>Git</h3><p>Version control</p></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="group-title reveal">Design &amp; Websites</h3>
+          <div class="skills-grid">
+            <div class="skill-card reveal" style="--d:.00s"><span class="skill-icon">UI</span><h3>UI/UX Design</h3><p>User-focused design</p></div>
+            <div class="skill-card reveal" style="--d:.05s"><span class="skill-icon">✳</span><h3>Graphic Design</h3><p>Digital visuals</p></div>
+            <div class="skill-card reveal" style="--d:.10s"><span class="skill-icon">W</span><h3>WordPress</h3><p>Website management</p></div>
+          </div>
+        </div>
+
+        <p class="skills-note reveal">This list represents technologies I am learning and developing through practice. I will update it as my experience grows.</p>
       </div>
     </section>
 
     <section class="section container" id="projects">
-      <div class="section-heading">
+      <div class="section-heading reveal">
         <p class="eyebrow">WHAT I AM BUILDING</p>
         <h2>Featured Projects</h2>
         <span class="heading-line"></span>
         <p class="section-intro">A selection of projects I am developing and improving.</p>
       </div>
       <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-preview preview-one"><span>01</span><div class="preview-window"><i></i><i></i><i></i><b>Office Management System</b><small>Organise. Manage. Track.</small></div></div>
-          <div class="project-body"><p class="project-type">WEB APPLICATION</p><h3>Office Management System</h3><p>A software project focused on organising office information and making everyday tasks easier to manage.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+        <article class="project-card reveal" style="--d:.00s">
+          <div class="project-preview preview-shot"><span>01</span><img src="officeflow-dashboard.png" alt="Screenshot of the OfficeFlow dashboard showing Employees, Departments and Tasks cards" loading="lazy"></div>
+          <div class="project-body"><p class="project-type">WEB APPLICATION</p><h3>Office Management System</h3><p>OfficeFlow is a management system for organising employees, departments, and tasks in one dashboard, making everyday office work easier to manage.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
         </article>
-        <article class="project-card">
+        <article class="project-card reveal" style="--d:.10s">
           <div class="project-preview preview-two"><span>02</span><div class="portfolio-symbol">&lt;M /&gt;</div><small>MY DIGITAL SPACE</small></div>
           <div class="project-body"><p class="project-type">WEB DESIGN</p><h3>Personal Portfolio</h3><p>A responsive website to present my growing technical skills, learning journey, and digital projects.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>Responsive Design</span></div></div>
         </article>
-        <article class="project-card">
+        <article class="project-card reveal" style="--d:.20s">
           <div class="project-preview preview-three"><span>03</span><div class="design-sheet"><div></div><div></div><div></div><b>Digital Design</b></div></div>
           <div class="project-body"><p class="project-type">CREATIVE WORK</p><h3>Digital Design Samples</h3><p>A space for future posters, graphics, and other visual work created with digital design tools.</p><div class="tag-list"><span>Design</span><span>Layout</span><span>Creativity</span></div></div>
         </article>
       </div>
-      <p class="project-note">Project descriptions and previews can be updated as each project develops. Add real screenshots and working links when they are ready.</p>
+      <p class="project-note reveal">Project descriptions and previews can be updated as each project develops. Add real screenshots and working links when they are ready.</p>
     </section>
 
     <section class="section contact-section" id="contact">
-      <div class="container">
+      <div class="container reveal">
         <div class="section-heading">
           <p class="eyebrow">LET'S CONNECT</p>
           <h2>Contact Me</h2>
@@ -110,10 +130,14 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner"><a class="logo" href="#top">MERCY<span>.</span></a><p>© <span id="year">2026</span> Mercy Amondi. Built with curiosity and code.</p><a class="back-top" href="#top">BACK TO TOP ↑</a></div>
+    <div class="container footer-inner"><a class="logo" href="#top">MERCY<span>.</span></a><p>© <span id="year">2026</span> Mercy Amondi. Built with curiosity and code.</p></div>
   </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
     const toggle = document.querySelector(".menu-toggle");
     const links = document.querySelector(".nav-links");
     toggle.addEventListener("click", () => {
@@ -124,6 +148,30 @@
       links.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
     }));
+
+    // Fade-up as sections scroll into view
+    const items = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      items.forEach(el => io.observe(el));
+    } else {
+      items.forEach(el => el.classList.add("visible"));
+    }
+
+    // Floating back-to-top button
+    const toTop = document.getElementById("toTop");
+    window.addEventListener("scroll", () => {
+      toTop.classList.toggle("show", window.scrollY > 600);
+    }, { passive: true });
+    toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
   </script>
 </body>
 </html>
+
